@@ -27,7 +27,7 @@ def main():
             else:
                 print("Infelizmente, você não ganhou dessa vez. Tente outro número.")
         except ValueError:
-            print("Entrada inválida. Por favor, digite um número inteiro.")
+            print("Entrada inválida. Por favor, digite um número inteiro...")
 
 
 if __name__ == "__main__":
