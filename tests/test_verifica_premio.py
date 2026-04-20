@@ -1,5 +1,12 @@
 import pytest
+import sys
+from pathlib import Path
+
+# Add parent directory to path so verifica_premio can be imported
+sys.path.insert(0, str(Path(__file__).parent.parent))
+
 from verifica_premio import parse_user_numbers, check_number_in_list, main
+
 
 
 def test_parse_user_numbers_valid():
