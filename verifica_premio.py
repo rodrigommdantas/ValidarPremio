@@ -7,7 +7,7 @@ def parse_user_numbers(numeros_usuario: str):
     try:
         return list(map(int, numeros_usuario.split()))
     except ValueError as e:
-        raise ValueError("Entrada inválida para números do usuário") from e
+        raise ValueError("Entrada inválida para números do usuário, digite novamente") from e
 
 
 def check_number_in_list(lista_numeros, numero_sorteado):
